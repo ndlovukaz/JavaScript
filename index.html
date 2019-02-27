@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8"
-    <title></title>
-    <script>
-    document.getElementById("demo").innerHTML = "Hello JavaScript";
-    </script>
-  </head>
+<html>
   <body>
-    <div id="first"></div>
+    <div id="demo">
+      <p>one</p>
+    </div>
+    <script>
+      function preBakeFunction(){
+        document.getElementById("demo").innerHTML="i changed on demand"
+      }
+      function BakeFunction(){
+      window.alert()="i changed on demand"
+      }
+
+      window.alert("Baking in progress")
+
+    </script>
+    <button type="button" onclick="preBakeFunction()">Bake it</button>
+    <button type="button" onclick="BakeFunction()">Bake two</button>
+
   </body>
 </html>
